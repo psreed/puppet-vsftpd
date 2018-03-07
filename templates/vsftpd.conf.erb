@@ -313,6 +313,15 @@ ssl_sslv3=<%= @ssl_sslv3 %>
 <% if @ssl_tlsv1 != scope.lookupvar('vsftpd::params::ssl_tlsv1') -%>
 ssl_tlsv1=<%= @ssl_tlsv1 %>
 <% end -%>
+<% if @ssl_tlsv1_1 != scope.lookupvar('vsftpd::params::ssl_tlsv1_1') -%>
+ssl_tlsv1_1=<%= @ssl_tlsv1_1 %>
+<% end -%>
+<% if @ssl_tlsv1_2 != scope.lookupvar('vsftpd::params::ssl_tlsv1_2') -%>
+ssl_tlsv1_2=<%= @ssl_tlsv1_2 %>
+<% end -%>
+<% if @implicit_ssl != scope.lookupvar('vsftpd::params::implicit_ssl') -%>
+implicit_ssl=<%= @implicit_ssl %>
+<% end -%>
 <% if @syslog_enable != scope.lookupvar('vsftpd::params::syslog_enable') -%>
 syslog_enable=<%= @syslog_enable %>
 <% end -%>
